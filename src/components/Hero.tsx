@@ -19,7 +19,14 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
-            <button className="brand-gradient rounded-lg px-6 py-3 font-semibold text-white transition hover:opacity-90">
+            <button
+              onClick={() =>
+                document
+                  .getElementById("technologies")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="brand-gradient rounded-lg px-6 py-3 font-semibold text-white transition hover:opacity-90"
+            >
               Explore Technologies
             </button>
 

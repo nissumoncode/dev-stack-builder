@@ -1,7 +1,13 @@
 import { useState } from "react";
 import logoText from "../assets/logo-text.png";
 
-const navLinks = ["Home", "Technologies", "Projects", "About", "Contact"];
+const navLinks = [
+  { name: "Home", href: "#" },
+  { name: "Technologies", href: "#technologies" },
+  { name: "Projects", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Contact", href: "#" },
+];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,11 +65,11 @@ export default function Navbar() {
         <nav className="hidden flex-1 items-center justify-center gap-7 lg:flex">
           {navLinks.map((link) => (
             <a
-              key={link}
-              href="#"
+              key={link.name}
+              href={link.href}
               className="text-sm font-medium text-slate-600 transition hover:text-[#D834C2]"
             >
-              {link}
+              {link.name}
             </a>
           ))}
         </nav>
@@ -102,12 +108,12 @@ export default function Navbar() {
         <nav className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6">
           {navLinks.map((link) => (
             <a
-              key={link}
-              href="#"
+              key={link.name}
+              href={link.href}
               onClick={() => setIsMenuOpen(false)}
               className="border-b border-slate-100 py-3 text-sm font-medium text-slate-700 last:border-b-0 hover:text-[#D834C2]"
             >
-              {link}
+              {link.name}
             </a>
           ))}
         </nav>

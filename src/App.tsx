@@ -87,7 +87,10 @@ function App() {
       <Hero />
 
       {/* Technologies Section */}
-      <main className="bg-[#FAFAFB] px-4 py-16 sm:px-6 lg:px-8">
+      <main
+        id="technologies"
+        className="bg-[#FAFAFB] px-4 py-16 sm:px-6 lg:px-8"
+      >
         <div className="mx-auto max-w-7xl">
           {/* Section Header */}
           <div className="mb-10">
