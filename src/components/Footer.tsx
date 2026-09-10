@@ -57,7 +57,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="#technologies"
                 className="block text-sm text-[#64748B] hover:text-[#D834C2]"
               >
                 Technologies
