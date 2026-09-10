@@ -23,7 +23,27 @@ export default function TechCard({
           />
         </div>
 
-        <span className="rounded-full bg-pink-50 px-3 py-1 text-xs font-semibold text-pink-600">
+        <span
+          className={`rounded-full border px-3 py-1 text-xs font-semibold ${
+            technology.badge === "Popular"
+              ? "border-pink-300 bg-pink-100 text-pink-700"
+              : technology.badge === "Versatile"
+                ? "border-green-300 bg-green-100 text-green-700"
+                : technology.badge === "Fast"
+                  ? "border-orange-300 bg-orange-100 text-orange-700"
+                  : technology.badge === "SSR"
+                    ? "border-blue-300 bg-blue-100 text-blue-700"
+                    : technology.badge === "Edge"
+                      ? "border-purple-300 bg-purple-100 text-purple-700"
+                      : technology.badge === "Top SQL"
+                        ? "border-cyan-300 bg-cyan-100 text-cyan-700"
+                        : technology.badge === "Essential"
+                          ? "border-indigo-300 bg-indigo-100 text-indigo-700"
+                          : technology.badge === "Database"
+                            ? "border-sky-300 bg-sky-100 text-sky-700"
+                            : "border-slate-300 bg-slate-100 text-slate-700"
+          }`}
+        >
           {technology.badge}
         </span>
       </div>
