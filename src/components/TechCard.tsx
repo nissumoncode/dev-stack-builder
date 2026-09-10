@@ -81,7 +81,7 @@ export default function TechCard({
       <button
         onClick={() => onAdd(technology)}
         disabled={isAdded}
-        className={`mt-auto w-full rounded-lg px-4 py-3 text-sm font-semibold transition ${
+        className={`mt-auto w-full rounded-lg px-4 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-[#D834C2] focus:ring-offset-2 ${
           isAdded
             ? "cursor-not-allowed bg-slate-200 text-slate-500"
             : "bg-[#121826] text-white hover:bg-[#1E293B]"
