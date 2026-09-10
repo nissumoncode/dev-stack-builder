@@ -116,7 +116,7 @@ function App() {
             /* Technologies + Stack Sidebar */
             <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
               {/* Technology Cards */}
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {technologies.map((technology) => (
                   <TechCard
                     key={technology.id}
